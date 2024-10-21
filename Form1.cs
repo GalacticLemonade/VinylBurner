@@ -22,9 +22,6 @@ namespace VinylBurner {
         private MaterialSkinManager materialSkinManager;
 
         private static SerialPort? _serialPort;
-        private bool tingyr = false;
-        private bool tingyg = false;
-        private bool tingyb = false;
 
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e) {
             SerialPort sp = (SerialPort)sender;
