@@ -32,6 +32,7 @@
             SeventyEightRPM = new MaterialSkin.Controls.MaterialButton();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
             materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            RPMIndicator = new MaterialSkin.Controls.MaterialLabel();
             SuspendLayout();
             // 
             // materialLabel1
@@ -167,10 +168,23 @@
             materialButton2.UseAccentColor = false;
             materialButton2.UseVisualStyleBackColor = true;
             // 
+            // RPMIndicator
+            // 
+            RPMIndicator.Depth = 0;
+            RPMIndicator.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            RPMIndicator.Location = new Point(65, 188);
+            RPMIndicator.MouseState = MaterialSkin.MouseState.HOVER;
+            RPMIndicator.Name = "RPMIndicator";
+            RPMIndicator.Size = new Size(117, 19);
+            RPMIndicator.TabIndex = 8;
+            RPMIndicator.Text = "0 rpm";
+            RPMIndicator.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(800, 450);
+            Controls.Add(RPMIndicator);
             Controls.Add(materialButton2);
             Controls.Add(materialButton1);
             Controls.Add(SeventyEightRPM);
@@ -200,5 +214,6 @@
         private MaterialSkin.Controls.MaterialButton SeventyEightRPM;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialLabel RPMIndicator;
     }
 }
